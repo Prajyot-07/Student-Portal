@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 id="two">Student Portal</h2>
+
+    <div >
+        <input type="text" id="search-bar" placeholder="Search">
+    </div>
+   
+    <div class="button-container">
+        <button class="one" onclick="sortTable('az')">Sort A-Z</button>
+        <button class="one" onclick="sortTable('za')">Sort Z-A</button>
+        <button class="one" onclick="sortTable('marks')">Sort by Marks</button>
+        <button class="one" onclick="sortTable('Passing')">Sort by Passing</button>
+        <button class="one" onclick="sortTable('class')">Sort by Class</button>
+        <button class="one" onclick="sortTable('gender')">Sort by Gender</button>
+    </div>
+
+    <div >
+        <table >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </tr>   
+            </thead>
+
+            <tbody id="student-table">
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+    <div id="image-container"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
